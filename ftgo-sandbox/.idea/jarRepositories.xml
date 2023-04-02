@@ -19,7 +19,7 @@
     <remote-repository>
       <option name="id" value="maven2" />
       <option name="name" value="maven2" />
-      <option name="url" value="file:$PROJECT_DIR$/../../../../cer/.m2/testdeploy" />
+      <option name="url" value="file:$USER_HOME$/cer/.m2/testdeploy" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven" />
@@ -40,6 +40,11 @@
       <option name="id" value="maven3" />
       <option name="name" value="maven3" />
       <option name="url" value="https://jitpack.io" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="file:$PROJECT_DIR$/../../../../../cer/.m2/testdeploy" />
     </remote-repository>
   </component>
 </project>
