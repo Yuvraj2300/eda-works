@@ -1,0 +1,96 @@
+apply plugin: "java"
+sourceCompatibility = 17
+targetCompatibility = 17
+
+group 'net.ys.eda.ftgo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.projectlombok:lombok:1.18.26"
+//    implementation("io.netty:netty-codec-http2:4.1.72.Final")
+//    implementation ("io.netty:netty-codec:4.1.72.Final")
+//    implementation ("io.netty:netty-transport:4.1.72.Final")
+//    implementation ("io.netty:netty-common:4.1.72.Final")
+//    implementation ("io.netty:netty-buffer:4.1.72.Final")
+//    implementation ("io.netty:netty-resolver:4.1.72.Final")
+
+//    ftgoApiSpecification project(":ftgo-consumer-service-api-spec")
+//    ftgoApiSpecification project(":ftgo-accounting-service-api-spec")
+//    ftgoApiSpecification project(":ftgo-restaurant-service-api-spec")
+
+//    implementation project(":common-swagger")
+    implementation project(":ftgo-common-jpa")
+    implementation project(":ftgo-common")
+
+//    implementation "io.eventuate.tram.core:eventuate-tram-aggregate-domain-events"
+//    implementation "io.eventuate.tram.core:eventuate-tram-spring-jdbc-kafka"
+//    implementation "io.eventuate.tram.core:eventuate-tram-spring-commands"
+//
+//    implementation "io.eventuate.tram.sagas:eventuate-tram-sagas-spring-orchestration-simple-dsl"
+
+//    implementation project(":ftgo-accounting-service-api")
+//    implementation project(":ftgo-consumer-service-api")
+//    implementation project(":ftgo-kitchen-service-api")
+//    implementation project(":ftgo-restaurant-service-api")
+//    implementation project(":ftgo-order-service-api")
+
+
+//    implementation "org.springframework.boot:spring-boot-starter-actuator:$springBootVersion"
+//    implementation "io.micrometer:micrometer-registry-prometheus:$micrometerVersion"
+    implementation "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion"
+//    implementation 'javax.el:javax.el-api:2.2.5'
+//
+//
+//    implementation "io.microservices.tools.canvas:microservice-canvas-springmvc:$microserviceCanvasVersion"
+//    implementation "io.microservices.tools.canvas:microservice-canvas-extractor-tram-sagas:$microserviceCanvasVersion"
+//    implementation "io.eventuate.tram.core:eventuate-tram-spring-messaging"
+//    implementation "io.eventuate.tram.sagas:eventuate-tram-sagas-spring-orchestration"
+//
+//    implementation('org.apache.kafka:kafka-clients:2.3.0') {
+//        force = true
+//    }
+
+//    testimplementation "io.eventuate.util:eventuate-util-test"
+//    testimplementation "io.eventuate.tram.core:eventuate-tram-test-util"
+//
+//    testimplementation "io.eventuate.tram.sagas:eventuate-tram-sagas-spring-in-memory"
+//    testimplementation "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
+//
+//    // Added this stuff
+//
+//    testimplementation "net.chrisrichardson.ftgo:ftgo-accounting-service-contracts:unspecified:stubs"
+//    testimplementation "net.chrisrichardson.ftgo:ftgo-consumer-service-contracts:unspecified:stubs"
+//    testimplementation "net.chrisrichardson.ftgo:ftgo-kitchen-service-contracts:unspecified:stubs"
+//    testimplementation "org.springframework.cloud:spring-cloud-contract-wiremock"
+//    testimplementation "org.springframework.cloud:spring-cloud-starter-contract-stub-runner"
+//    testimplementation 'io.rest-assured:rest-assured:3.0.6'
+//    testimplementation 'io.rest-assured:spring-mock-mvc:3.0.6'
+//    testimplementation "io.rest-assured:json-path:3.0.6"
+//
+//    testimplementation "io.eventuate.tram.core:eventuate-tram-spring-testing-support-cloud-contract"
+//
+//    testimplementation "io.eventuate.tram.sagas:eventuate-tram-sagas-spring-testing-support"
+//
+//    componentTestimplementation 'info.cukes:cucumber-java:1.2.5'
+//    componentTestimplementation 'info.cukes:cucumber-junit:1.2.5'
+//    componentTestimplementation 'info.cukes:cucumber-spring:1.2.5'
+//
+//    testimplementation project(":ftgo-test-util")
+//    testimplementation "org.hamcrest:hamcrest:2.1"
+//
+//    integrationTestimplementation "io.eventuate.tram.sagas:eventuate-tram-sagas-spring-testing-support-cloud-contract"
+//    integrationTestimplementation "io.eventuate.tram.core:eventuate-tram-spring-in-memory"
+//
+//
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
